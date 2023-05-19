@@ -90,47 +90,6 @@ body {
     padding: 5px;
 }
 
-.animacion {
-    -webkit-animation: animacion_contenedor 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) both;
-    animation: animacion_contenedor 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) both;
-}
-
-@-webkit-keyframes animacion {
-    0% {
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 0% 0%;
-        transform-origin: 0% 0%;
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-        -webkit-transform-origin: 0% 0%;
-        transform-origin: 0% 0%;
-        opacity: 1;
-    }
-}
-
-@keyframes animacion {
-    0% {
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 0% 0%;
-        transform-origin: 0% 0%;
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-        -webkit-transform-origin: 0% 0%;
-        transform-origin: 0% 0%;
-        opacity: 1;
-    }
-}
-
 .seccion1_texto {
     width: 90%;
     height: 300px;
@@ -157,6 +116,7 @@ textarea {
     outline: transparent;
     max-width: 100%;
     max-height: 85%;
+    text-transform: lowercase;
 }
 
 ::placeholder {
@@ -196,7 +156,6 @@ textarea {
 .boton {
     max-width: 300px;
     width: 60%;
-    /* border-radius: 24px; */
     margin-right: 10px;
     height: 60px;
 }
@@ -554,7 +513,7 @@ textarea {
         top: 720px;
     }
 
-    .ocultar_munieco{
+    .ocultar_munieco {
         display: none;
     }
 
