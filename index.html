@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" type="text/css"> <!-- Estilos reset -->
+    <link rel="stylesheet" href="./style.css" type="text/css"> <!-- Estilos propios -->
+    <title>Encriptador</title>   <!-- Titulo pestaña -->
+    <meta name="description" content="Encriptador de textos">
+    <meta name="author" content="Daniel Ricardo Zamora Vázquez @drzamora">
+    <!-- Cambia el color de la barra de navegacion solo algunos navegadores la aceptan-->
+    <meta name="theme-color" content="#0a3871">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+        <div class="contenedor_todo"> 
+        <header class="encabezado">
+            <img class="logo" src = "./imagenes/Avatar.png" alt = "Logo de Alura">
+            <h1 class="titulo">Encriptador / Desencriptador de mensajes</h1>
+        </header>
+
+            <!-- Seccion de texto de ingreso -->
+            <section class="seccion1 animacion">
+                <textarea class="seccion1_texto animacion" name="texto" id="textarea" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+                
+                <div class="informacion">
+                    <img src="./imagenes/Vector.svg" alt="signo de exclamacion" class="informacion_imagen">
+                    <p class="informacion_parrafo">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <button class="boton btn_encriptar" onclick = "btnEncriptar()">Encriptar</button> <!-- OnClick tiene la funcion encriptar-->
+                    <button class="boton btn_desencriptar" onclick = "btnDesencriptar()">Desencriptar</button> <!-- OnClick tiene la funcion desencriptar-->
+                </div>
+
+            </section>
+
+            <!-- Seccion resultado -->
+            <section class="seccion2 animacion">
+
+                <textarea class="mensaje" name="texto" id="resultado" cols="30" rows="0"></textarea>
+
+                <div class="ocultar">
+                    <h2 class="ocultar_titulo">Ningún mensaje fue encontrado</h2>
+                    <p class="ocultar_parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <!-- <h3 class="texto_mensaje_encriptado">Mensaje Encriptado</h3> -->
+                </div>
+
+                <div class="copiar">
+                    <button class="boton btn_copiar" hidden id="copiar" onclick = "copiarTexto()" >Copiar</button> <!-- OnClick tiene la funcion copiar-->
+                </div>
+
+            </section>
+
+            <!-- Pie de pagina con redes sociales -->
+            <footer class="contenedor_redes">
+
+                <ul class="contenedor_redes_lista">
+                    <li><a href="https://www.facebook.com/richard.zamora2010" target="_blank" class="facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    <li><a href="https://www.instagram.com/richard_zamora_2010/" target="_blank" class="instagram"><i class="fa fa-instagram fa-fw"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/daniel-ricardo-z-93b844b5/" target="_blank" class="linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                    <li><a href="https://github.com/drzamora" target="_blank" class="github"><i><i class="fa fa-github fa-fw"></i></a></li>
+                </ul>
+
+                <p class="contenedor_redes_footer">Challenge Oracle Next One 2023 - 
+                <span> - Diseñado por Daniel Ricardo Zamora Vázquez de México</span></p>
+
+            </footer>
+        </div>
+</body>
+
+<!-- Iconos de las redes -->
+<script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
+
+<!-- Funcionalidad de la página encriptador.html -->
+<script src="./script.js"></script>
+</html>
