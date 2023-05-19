@@ -1,2 +1,2 @@
-# encriptadortexto
+# encriptador
 Encriptador/Desencriptador
