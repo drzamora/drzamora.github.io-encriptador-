@@ -1,4 +1,4 @@
-# encriptador
+# ChallengeOneEncriptador
 Encriptador/Desencriptador
 
 https://drzamora.github.io/encriptador/
